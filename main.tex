@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsfonts, amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage[margin=1.25in]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=blue,
+    pdfpagemode=FullScreen,
+}
+
+\bibliography{bibliography}
+
+\usepackage{subfiles}
+\usepackage{titling}
+\setlength{\droptitle}{20pt}
+
+\begin{document}
+
+\clearpage \subfile{Subdoc 1}
+\clearpage \subfile{Subdoc 2}
+
+\end{document}
