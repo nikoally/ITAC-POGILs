@@ -1,0 +1,301 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries What Uses All the Energy?}\\[4pt]
+    A Survey of Manufacturing Facility Systems
+\end{center}
+
+\section*{Model 1: The Energy Landscape}
+
+Different types of manufacturing facilities use energy in very different ways.
+The table below shows energy end-use breakdowns for four facilities, each in a
+different industrial sector. Note that these values are specific to these four
+facilities. Energy allocation varies widely between facilities, even within the
+same sector, depending on specific processes, equipment age, climate zone, and
+operating schedule.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2350}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1912}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1912}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1912}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1912}}@{}}
+\toprule\noalign{}
+Energy end use & Facility A: Food Processing & Facility B: Metal Fabrication
+  & Facility C: Chemical Mfg. & Facility D: Auto Assembly \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Motors / drives   & 25\% & 45\% & 50\% & 40\% \\
+Process heating   & 35\% & 15\% & 20\% & 10\% \\
+HVAC              & 13\% &  7\% &  5\% & 20\% \\
+Compressed air    &  5\% & 18\% & 10\% & 15\% \\
+Refrigeration     & 12\% &  2\% &  3\% &  2\% \\
+Lighting          &  5\% &  6\% &  4\% &  6\% \\
+Other             &  5\% &  7\% &  8\% &  7\% \\
+\end{longtable}
+
+\emph{Table 1. Energy end-use shares (\%) for four manufacturing facilities in
+different industrial sectors. These are facility-specific values; other
+facilities in the same sector may differ significantly.}
+
+\begin{enumerate}
+  \needspace{4\baselineskip}\item Which energy end-use category claims the largest share in three of the
+        four facilities shown?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Which facility is the exception to the pattern you identified in
+        Question 1? What end-use category dominates there, and why might that
+        be the case given what that facility produces?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Refrigeration accounts for 12\% of energy use at Facility A (food
+        processing) but only 2--3\% at the other three. In one sentence,
+        explain why this might be.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Rank the four facilities from highest to lowest HVAC energy share.
+        What characteristic of Facility A (food processing) and Facility D
+        (automotive assembly) might explain why HVAC is a much larger energy
+        consumer there than the others?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Suppose you read an industry report claiming that ``motors typically
+        account for about 40\% of energy use in manufacturing.'' Based on
+        Table 1, is this a reasonable generalization? What important caveat
+        would you add?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item A facility manager at Facility C (chemical manufacturing) tells you,
+        ``We don't need to worry about compressed air; it's only 10\% of our
+        bill.'' Without doing any calculations, give two reasons why this
+        statement might be misleading.
+        \vspace{1.25in}
+\end{enumerate}
+
+\clearpage
+\section*{Model 2: A Field Guide to Facility Systems}
+
+The table below introduces the major energy-consuming system types you will
+encounter during an industrial energy assessment. For each system, a single key
+performance metric is listed. This is the number that assessors most commonly
+use as a starting point when evaluating how well the system is performing.
+These metrics are not the only way to evaluate each system, but they give you a
+consistent vocabulary for comparing equipment and identifying where to look
+more closely.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1923}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4274}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3803}}@{}}
+\toprule\noalign{}
+System & What it does & Key metric \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Lighting          & Provides illumination for tasks, safety, and general
+                    visibility throughout the facility
+                  & Lumens per watt (lm/W) \\
+Motors / drives   & Convert electrical energy into mechanical energy to power
+                    fans, pumps, conveyors, and production equipment
+                  & \% nominal efficiency (full-load) \\
+Compressed air    & Generate and distribute pressurized air for pneumatic
+                    tools, actuators, blow-off, and process applications
+                  & kW/100 cfm (specific power) \\
+HVAC              & Maintain thermal comfort and air quality in occupied and
+                    conditioned spaces
+                  & kW/ton (cooling), \% AFUE (heating) \\
+Process heating   & Apply thermal energy directly to materials for drying,
+                    curing, melting, heat treating, or other transformation
+                  & \% combustion efficiency \\
+Refrigeration     & Remove heat from products or spaces to maintain
+                    temperatures below ambient for storage or process cooling
+                  & kW/ton \\
+Steam systems     & Generate and distribute steam for process heating,
+                    mechanical drives, or building heat
+                  & \% combustion efficiency \\
+\end{longtable}
+
+\emph{Table 2. Major energy system types encountered during industrial energy
+assessments, with primary function and key performance metric.}
+
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \needspace{4\baselineskip}\item Look at the key metrics column. Most of these metrics are ratios. What
+        do the numerator and denominator of each ratio usually represent?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Sort the eight systems into two groups: those whose primary energy
+        input is electricity, and those whose primary energy input is fuel
+        (natural gas, oil, etc.). Identify at least one system that could
+        reasonably fall into either category.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item HVAC and refrigeration both involve removing heat from a space. Based
+        on Table 2, what distinguishes them from each other in terms of
+        purpose?
+        \vspace{1.25in}
+
+\end{enumerate}
+
+\clearpage
+\section*{Model 3: Component Efficiency vs.\ System Efficiency}
+
+When you evaluate a piece of equipment, the nameplate or catalog efficiency
+tells you how well that individual component converts its energy input to
+useful output under rated conditions. But in practice, energy is lost at every
+stage between the meter and the point of use. The diagram below illustrates
+this concept for a compressed air system, tracing electrical energy from the
+utility meter to the point where air does useful work.
+
+\begin{figure}[ht]
+  \centering
+  \fbox{\parbox{0.85\textwidth}{\centering\vspace{2.5cm}
+    \textit{[Figure 1: Compressed air system energy flow diagram --- insert image here]}
+  \vspace{2.5cm}}}
+  \caption{Compressed air system energy flow from utility meter to point of
+    use, illustrating cumulative losses at each stage.}
+\end{figure}
+
+Starting from 100 kW of electrical input at the utility meter, motor losses
+consume roughly 5\%, leaving about 95 kW of shaft power. The compression
+process converts most of that mechanical energy into heat; only about 19 kW
+remains as useful air energy at the compressor discharge. Distribution losses
+through piping (pressure drop, friction) reduce this to roughly 16 kW at the
+point of use. Finally, leaks in a typical system waste about 25\% of the
+generated air, leaving approximately 12 kW of equivalent useful work. The
+compressor motor itself is about 95\% efficient. The system as a whole is about
+12\% efficient.
+
+The same pattern, with different magnitudes, appears in other systems. A boiler
+might be 82\% efficient at converting fuel to steam, but the steam system as a
+whole (including distribution losses, trap failures, condensate return, and
+insulation deficiencies) might deliver only 55--60\% of the original fuel
+energy to the process.
+
+\begin{enumerate}
+  \setcounter{enumi}{11}
+  \needspace{4\baselineskip}\item The compressor motor in Figure 1 is approximately 95\% efficient. If
+        you were evaluating this system by component efficiency alone, would it
+        appear to need attention? Why or why not?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Where in the system does the single largest energy loss occur? Is this
+        loss something you could see or hear during a walk-through?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Leaks account for roughly 25\% of the generated air in this example.
+        If you could eliminate all leaks, how much of the original 100 kW
+        input would reach useful work? Show your reasoning.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item In your own words, explain the difference between component efficiency
+        and system efficiency. Why does this distinction matter for energy
+        assessors?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item A facility manager says, ``We just bought a new premium-efficiency
+        compressor motor, so our compressed air system is now efficient.''
+        Based on Figure 1, explain why this claim is incomplete.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Name one other system from Table 2 where you would expect a large gap
+        between component efficiency and system efficiency. Briefly explain
+        what losses occur between the prime mover and the useful output.
+        \vspace{1.25in}
+\end{enumerate}
+
+\clearpage
+\section*{Model 4: Spotting Opportunities on a Walk-Through}
+
+Below are ten observations recorded by an assessment team during a walk-through
+of a medium-sized metals fabrication plant. The facility operates one shift
+(6 AM to 2:30 PM, Monday through Friday) and has approximately 120,000 square
+feet of conditioned production space plus 30,000 square feet of unconditioned
+warehouse.
+
+Read each observation and use what you have learned from Models 1 through 3 to
+answer the questions.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0641}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9359}}@{}}
+\toprule\noalign{}
+\textbf{\#} & \textbf{Observation} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{A} & High-bay HID fixtures (400W metal halide) are on throughout the
+  production floor, including areas where no work is being performed during the
+  walk-through. \\
+\textbf{B} & The main air compressor (75 HP rotary screw) runs continuously,
+  including during the lunch break when most pneumatic tools are idle. \\
+\textbf{C} & Several overhead doors between the conditioned production area and
+  the unconditioned warehouse are propped open. \\
+\textbf{D} & A 50 HP exhaust fan on the roof runs at full speed 24/7, though it
+  is only needed during production hours for weld fume extraction. \\
+\textbf{E} & Two audible air leaks are noticed near quick-disconnect fittings
+  on the main compressed air header. \\
+\textbf{F} & The natural gas furnace used for heat treating has visible flue
+  gases with a slight yellow tinge, and the facility has no record of a recent
+  combustion efficiency test. \\
+\textbf{G} & The roof of the warehouse section has minimal insulation (estimated
+  R-5), and the HVAC system for the adjacent production area runs year-round. \\
+\textbf{H} & Several 25 HP motors driving conveyor systems are original
+  equipment from the 1990s and are rewound, not replaced. \\
+\textbf{I} & The chilled water system (80-ton reciprocating chiller) operates at
+  full capacity despite the outdoor temperature being 55\textdegree F during
+  the assessment. \\
+\textbf{J} & Fluorescent T12 fixtures with magnetic ballasts are still in use
+  in the office and breakroom areas. \\
+\end{longtable}
+
+\emph{Table 3. Walk-through observations from a metals fabrication facility
+operating one shift, Monday through Friday, 6:00 AM to 2:30 PM.}
+
+\begin{enumerate}
+  \setcounter{enumi}{17}
+  \needspace{4\baselineskip}\item For each observation (A through J), identify which system category from
+        Table 2 it belongs to. Some observations may relate to more than one
+        system.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Observations B and E both involve the compressed air system. Using what
+        you learned in Model 3, explain how these two observations are related
+        and why addressing them together would produce a larger savings than
+        addressing either one alone.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Observation D describes a motor running 24/7 when it is only needed
+        during one shift. Without doing a precise calculation, estimate roughly
+        what fraction of this fan's annual energy consumption is wasted.
+        (\emph{Hint: think about how many hours are in a year versus how many
+        hours the fan is actually needed.})
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Look at your answers to Question 18 and refer back to Table 1 (energy
+        end-use shares for metals fabrication). Which three observations would
+        you prioritize for further investigation, and why? Your answer should
+        consider both the energy share of the relevant system category and the
+        apparent severity of the issue observed.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item Observation H mentions motors that have been rewound rather than
+        replaced. Using Table 2's key metric for motors, explain why a rewound
+        motor might perform differently than a new replacement. What additional
+        information would you need to quantify the potential savings?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}\item For one observation of your choice, describe what additional
+        measurements or data you would collect before writing an assessment
+        recommendation. Be specific: what instrument or data source, and what
+        value are you trying to determine?
+        \vspace{1.25in}
+\end{enumerate}
+
+\end{document}

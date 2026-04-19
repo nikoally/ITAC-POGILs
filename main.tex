@@ -1,10 +1,15 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
-\usepackage{graphicx} % Required for inserting images
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
 \usepackage{amsfonts, amsmath, amssymb, amsthm}
 \usepackage{hyperref}
-\usepackage{biblatex}
-\usepackage[margin=1.25in]{geometry}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable, booktabs, array}
+\usepackage{calc}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0em}{}
 
 \hypersetup{
     colorlinks=true,
@@ -15,15 +20,19 @@
     pdfpagemode=FullScreen,
 }
 
-\bibliography{bibliography}
-
 \usepackage{subfiles}
 \usepackage{titling}
 \setlength{\droptitle}{20pt}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
 
-\clearpage \subfile{Subdoc 1}
-\clearpage \subfile{Subdoc 2}
+\subfile{ITAC Intro Activity}
+\clearpage \subfile{Utility Billing Worksheet}
 
 \end{document}

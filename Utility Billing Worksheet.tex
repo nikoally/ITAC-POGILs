@@ -1,0 +1,324 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Utility Billing for Industrial Energy Assessment}
+\end{center}
+
+\section*{Model 1: Two Facilities, Same Annual Energy, Different Bills}
+
+The table below shows annual electricity billing data for two manufacturing
+facilities. Both consumed the same total kWh over the year, but their bills
+look very different. Study the data carefully before answering the questions.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4060}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2970}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2970}}@{}}
+\toprule\noalign{}
+Billing item & Acme Stamping & Riverside Plastics \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{3}{@{}l@{}}{\textbf{Annual consumption}} \\
+Total kWh consumed    & 1,200,000 kWh            & 1,200,000 kWh \\
+Operating hours       & 8,760 hr/yr (continuous)  & 2,000 hr/yr (day shift only) \\
+\multicolumn{3}{@{}l@{}}{\textbf{Peak demand}} \\
+Peak 15-min demand    & 145 kW                    & 720 kW \\
+\multicolumn{3}{@{}l@{}}{\textbf{Annual charges}} \\
+Annual consumption charges    & \$84,000      & \$84,000 \\
+Annual demand charges         & \$20,880      & \$103,680 \\
+Total annual electricity cost & \$104,880     & \$187,680 \\
+Blended rate (total cost / total kWh) & \$0.0874/kWh & \$0.1564/kWh \\
+\end{longtable}
+
+\begin{enumerate}
+  \needspace{4\baselineskip}
+  \item Looking only at the total kWh consumed row, what do you notice about
+        the two facilities? Why is this the case?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Compare the annual demand charges. Which facility pays more, and by
+        roughly how much?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Explain in your own words why Riverside's demand charges are so much
+        higher than Acme's, even though their annual kWh consumption is
+        identical.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Acme runs 24 hours a day, 365 days a year. Riverside runs only a day
+        shift ($\sim$2,000 hours per year). Both used the same total kWh.
+        Calculate the average power level of each facility during operating
+        hours using the formula below, then record your results.
+
+        \[
+          \text{Average Power (kW)} = \frac{\text{Total kWh Consumed}}{\text{Operating Hours (hr/yr)}}
+        \]
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Load factor is defined as the quotient of average load and peak load.
+        Calculate the load factor for each facility.
+
+        \[
+          \text{Load Factor} = \frac{\text{Average Load (kW)}}{\text{Peak Load (kW)}}
+        \]
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item If two facilities have the same annual consumption, will the one with
+        higher or lower load factor pay more in demand charges?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Demand charges are typically assessed on the peak 15-minute interval
+        in the billing period. Why might Riverside Plastics' peak demand be
+        720 kW while their average demand is lower?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Look at the blended rate row. The two values are different even though
+        both facilities pay the same tariff rates. Explain why the blended
+        rates differ.
+        \vspace{1.25in}
+\end{enumerate}
+
+\clearpage
+\section*{Model 2: The Blended Rate Trap}
+
+The blended rate seems convenient: divide the total bill by total kWh to get a
+single number. The table below shows what happens when two efficiency measures
+are evaluated using the blended rate versus the correct component rates.
+
+\medskip
+\noindent\textbf{Facility rate structure for this model:}
+\begin{itemize}
+      \item Consumption rate: \$0.07/kWh
+      \item Demand rate: \$12/kW/month
+      \item Blended rate: \$0.115/kWh
+\end{itemize}
+
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2991}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3504}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3504}}@{}}
+\toprule\noalign{}
+\textbf{Item}
+& \textbf{Measure A: Lighting Controls (saves 100,000 kWh/yr; no demand reduction)}
+& \textbf{Measure B: Load scheduling (saves 0 kWh/yr; reduces peak demand by 50 kW)} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{3}{@{}l@{}}{\textbf{Correct calculation (component rates)}} \\
+Consumption savings
+  & 100,000 kWh $\times$ \$0.07/kWh $=$ \$7,000/yr
+  & 0 kWh $\times$ \$0.07/kWh $=$ \$0/yr \\
+Demand savings
+  & \$0 (no peak reduction)
+  & 50 kW $\times$ \$12/kW $\times$ 12 mo $=$ \$7,200/yr \\
+\textbf{Correct total savings} & \textbf{\$7,000/yr} & \textbf{\$7,200/yr} \\
+\multicolumn{3}{@{}l@{}}{\textbf{Blended rate calculation}} \\
+Blended rate estimate
+  & 100,000 kWh $\times$ \$0.115/kWh $=$ \$11,500/yr
+  & 0 kWh $\times$ \$0.115/kWh $=$ \$0/yr \\
+\textbf{Blended rate error}
+  & \textbf{Overstated by \$4,500 (+64\%)}
+  & \textbf{Understated by \$7,200 ($-$100\%)} \\
+\end{longtable}
+
+\begin{enumerate}
+  \setcounter{enumi}{8}
+  \needspace{4\baselineskip}
+  \item For Measure A (lighting upgrade), the blended rate overstated savings
+        by 64\%. Explain mechanically why this happens. Where does the extra
+        \$4,500 come from?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item For Measure B (load scheduling), the blended rate returned \$0 even
+        though the correct calculation yields \$7,200/yr. Why does the blended
+        rate fail completely for this measure?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Based on the two failure modes in Model 2, complete the following
+        statement:
+
+        \vspace{0.25in}
+      The blended rate embeds \underline{\hspace{4cm}} charges into a
+      per-kWh number, which causes it to overstate savings for measures that
+      only reduce \underline{\hspace{4cm}} and completely miss savings for
+      measures that only reduce \underline{\hspace{4cm}}.
+      \vspace{0.25in}
+
+
+  \needspace{4\baselineskip}
+  \item A facilities employee at a major defense contractor says: ``I always
+        use the blended rate because it's simpler and the errors cancel out in
+        the end.'' Evaluate this claim. Under what facility profile would the
+        errors actually cancel?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item At ITAC, we never use blended rates. Explain the rationale for that
+        policy based on what you observed in Model 2.
+        \vspace{1.25in}
+\end{enumerate}
+
+\clearpage
+\section*{Model 3: Demand Ratchets and the True Cost of a Peak}
+
+Many commercial and industrial tariffs include a ratchet clause. The diagram
+below shows how a ratchet operates over a 12-month window for a facility that
+had an unusually high demand spike in January. Their demand rate is \$12/kW.
+
+\medskip
+\noindent\textbf{Tariff terms:} Billed demand $=$ max(actual monthly demand,
+$0.80 \times$ highest demand in preceding 12 months)
+\medskip
+
+\begin{figure}[ht]
+  \centering
+  \fbox{\parbox{0.85\textwidth}{\centering\vspace{3cm}
+    \textit{[Figure 1: Demand ratchet bar chart --- insert image here]}
+  \vspace{3cm}}}
+  \caption{Monthly billed demand vs.\ actual demand under an 80\% ratchet
+    clause following a January demand spike.}
+\end{figure}
+
+\begin{enumerate}
+  \setcounter{enumi}{13}
+  \needspace{4\baselineskip}
+  \item In which months does the ratchet clause result in billed demand
+        exceeding actual demand?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item For March (actual demand = 290 kW), calculate the demand charge both
+        without and with the ratchet applied. Show your work. What is the
+        additional monthly cost imposed by the ratchet?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item The January spike was caused by an unusually cold week that required
+        all electric heating systems to run simultaneously. Suggest two
+        operational strategies that could have prevented the spike from
+        reaching 500 kW.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item An equipment upgrade would reduce the facility's peak demand by 70 kW
+        in every month. The measure costs \$10,000. Using \$12/kW/month:
+        \begin{enumerate}
+          \item Calculate the annual demand savings from the 70 kW reduction
+                alone (ignoring the ratchet clause).
+                \vspace{1.25in}
+          \item Now consider that the 80\% ratchet is still in effect and the
+                500 kW historical peak has not yet rolled off the 12-month
+                window. Does the demand reduction produce any bill savings
+                immediately? Explain.
+                \vspace{1.25in}
+          \item What does this tell you about the timing of demand-reduction
+                savings at facilities with ratchet clauses?
+                \vspace{1.25in}
+        \end{enumerate}
+\end{enumerate}
+
+\clearpage
+\section*{Model 4: Power Factor and Its Effect on the Bill}
+
+Power factor (PF) describes how efficiently a facility converts the electricity
+delivered by the utility into useful work. The triangle below shows the
+relationship between real power, reactive power, and apparent power.
+
+\begin{figure}[ht]
+  \centering
+  \fbox{\parbox{0.85\textwidth}{\centering\vspace{3cm}
+    \textit{[Figure 2: Power factor triangle diagram --- insert image here]}
+  \vspace{3cm}}}
+  \caption{Power triangle illustrating the relationship between real power
+    (kW), reactive power (kVAR), and apparent power (kVA).}
+\end{figure}
+
+The table below shows the power factor of a facility before and after they
+install capacitor banks to increase their power factor. Capacitor banks help
+with this by supplying leading reactive power, which cancels out lagging
+reactive power.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3745}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2858}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3397}}@{}}
+\toprule\noalign{}
+\textbf{Parameter} & \textbf{Before correction} & \textbf{After correction} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{3}{@{}l@{}}{\textbf{Electrical quantities}} \\
+Real power (kW)       & 200 kW             & 200 kW \\
+Apparent power (kVA)  & 267 kVA            & 211 kVA \\
+Reactive power (kVAR) & 177 kVAR (lagging) & 66 kVAR (lagging) \\
+kVAR correction needed for 0.95 PF & --- & 177 kVAR $-$ 66 kVAR $=$ 111 kVAR correction \\
+\end{longtable}
+
+\begin{enumerate}
+  \setcounter{enumi}{17}
+  \needspace{4\baselineskip}
+  \item Calculate the power factor before and after correction. Show your
+        calculations.
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item The real power consumed by the facility did not change before or after
+        power factor correction. But the apparent power dropped significantly.
+        Explain physically what the capacitor bank is doing to make this
+        possible. (\emph{Hint: draw the power factor triangle before and after
+        correction --- what happens to the triangle?})
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Utilities must generate, transmit, and distribute apparent power
+        (kVA), but they can only bill for real power (kW) on some tariffs.
+        Why does this create a financial incentive for utilities to penalize
+        low power factor?
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item For each of the rate tariffs in the table below, calculate the demand
+        savings from the scenario illustrated in Model 4 by calculating the
+        billed demand before/after the correction, then finding the difference.
+        The facility is billed at \$12 per kW or kVA.
+
+        \begin{longtable}[]{@{}
+          >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+          >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3334}}
+          >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3334}}@{}}
+        \toprule\noalign{}
+        Rate Tariff 1 & Rate Tariff 2 & Rate Tariff 3 \\
+        \midrule\noalign{}
+        \endhead
+        \bottomrule\noalign{}
+        \endlastfoot
+        Demand is billed as the greater of real power or 90\% of apparent power
+        & If power factor falls below 90\%, the company's demand is billed by kVA
+          instead of kW.
+        & Demand is billed by kVA, regardless of power factor. \\
+        \end{longtable}
+        \vspace{1.25in}
+
+  \needspace{4\baselineskip}
+  \item Based on the power factor post-correction, which rate tariff do you
+        think the company was under? Why?
+        \vspace{1.25in}
+\end{enumerate}
+
+\end{document}
